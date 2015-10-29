@@ -4,9 +4,9 @@ sudo apt-get install -qy software-properties-common
 sudo apt-add-repository -y ppa:juju/stable
 sudo apt-get update -qq
 
-sudo apt-get -qy install openssh-client python-pip
+sudo apt-get -qy install openssh-client python-pip curl
 sudo apt-get -qy install juju-core juju-local juju-quickstart juju-deployer
-sudo pip install boto
+sudo pip install boto pywinrm
 
 sudo chown -R ubuntu:ubuntu /home/ubuntu
 mkdir /home/ubuntu/.juju
